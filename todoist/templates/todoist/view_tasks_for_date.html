@@ -1,0 +1,19 @@
+{% extends "todoist/layout.html" %}
+{% load staticfiles %}
+
+{% block css_include %}
+    <link href="{% static 'todoist/view_tasks_for_date.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <h2>{{ tasks.0.deadline_date }}</h2>
+      {% for task in tasks %}
+          <div class="check"><a class="check-box" href="/task/{{ task.id }}/mark_done/"></a></div>
+          <div class="check"><a class="check-task" href="/task/{{ task.id }}/edit/">{{ task.name }}</a>
+          </div>
+          <hr>
+      {% endfor %}
+  </div>
+
+{% endblock %}

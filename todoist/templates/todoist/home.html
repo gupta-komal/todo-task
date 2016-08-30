@@ -1,0 +1,20 @@
+{% extends "todoist/layout.html" %}
+{% load staticfiles %}
+
+{% block css_include %}
+    <link href="{% static 'todoist/home.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    {% for tasks_for_date in tasks_for_next_7_days %}
+    <a href="/tasks/{{ tasks_for_date.date | date:'Y-m-d' }}"><h2 class="date">{{ tasks_for_date.date }}</h2></a>
+        {% for task in tasks_for_date.tasks %}
+          <div class="check"><a class="check-box" href="/task/{{ task.id }}/mark_done/"></a></div>
+          <div class="check"><a class="check-task" href="/task/{{ task.id }}/edit/">{{ task.name }}</a></div>
+        <hr>
+        {% endfor %}
+    {% endfor %}
+  </div>
+
+{% endblock %}

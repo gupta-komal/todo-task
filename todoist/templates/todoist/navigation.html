@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<nav>
+  <div class="container-fluid">
+    <div class="nav-header-container">
+      <a class="nav-header" href="{% url 'home'%}">
+        <img class="logo" src="{% static 'images/logo.png' %}">
+      </a>
+    </div>
+    <ul class="navbar-right">
+      <li><a href="{% url 'create_task' %}">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </a></li>
+      <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+

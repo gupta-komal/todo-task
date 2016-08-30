@@ -1,0 +1,55 @@
+body{
+  background: #eee;
+  font-family: 'Open Sans';
+}
+
+img.logo{
+  height: 25px;
+  width: 25px;
+}
+
+i{
+  width: 20px;
+  height: 20px;
+}
+
+nav{
+  height: 40px;
+  background: #db4c3f;
+  margin-bottom: 0;
+  padding: 0 15%;
+  border-bottom: solid 1px #ca2100;
+}
+
+div.container-fluid{
+  height:40px;
+  padding: 0
+}
+
+div.nav-header-container{
+  padding: 7px;
+  height: 26px;
+  display: inline-block;
+}
+
+.navbar-right {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar-right li{
+  display: inline-block;
+  float: right:
+}
+
+.navbar-right>li>a{
+  display: inline-block;
+  height:40px;
+  padding: 7px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+

@@ -1,0 +1,27 @@
+{% extends "todoist/layout.html" %}
+
+{% load staticfiles %}
+
+{% block css_include %}
+    <link href="{% static 'todoist/create_task.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class="content">
+  <form id="create"  method="post" action="/task/create/">
+    {% csrf_token %}
+    <div><p> Add Task </p></div>
+    <div class="form-group">
+      {{ form.name }}
+    </div>
+     <div class="form-group">
+      {{ form.deadline_date }}
+    </div>
+    <div class="form-group">
+      <input class="btn btn-danger " type="submit" value="Add Task" />
+    </div>
+  </form>
+</div>
+
+{% endblock %}

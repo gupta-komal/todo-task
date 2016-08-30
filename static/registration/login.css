@@ -1,0 +1,74 @@
+nav.navbar{
+  background: #fff;
+  margin-bottom: 0;
+  height: 53px;
+}
+
+img.logo{
+  height: 25px;
+  width: 25px;
+}
+
+#signin, #register{
+  border-style: solid ;
+  border-color: #fff;
+  border-width: 0 0 2px 0;
+  color: #aaa;
+}
+
+#signin:hover, #register:hover{
+  border-style: solid ;
+  border-color: #db4c3f;
+  border-width: 0 0 3px 0;
+}
+
+#register{
+  font-weight: bold;
+}
+
+div.content{
+  height: 600px;
+  background: url(./../images/home.jpg) no-repeat center ;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+
+form{
+  z-index: 1000;
+  background: white;
+  margin: 0 32%;
+  padding: 50px 0;
+  box-shadow: 0 0 25px #000;
+}
+
+div.form-group{
+  padding: 0 21%;
+  margin: 0;
+}
+
+div.form-group > label{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.form-group > input{
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 5px;
+  border: 1px solid #aaa;
+  height: 33px;
+}
+
+hr{
+  width: 80%;
+  color: #aaa;
+  padding: 0 10%;
+}
+
+input.btn{
+  margin:0 20% 20px;
+  width: 60%;
+  border-radius: 0;
+}

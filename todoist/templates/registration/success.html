@@ -1,0 +1,15 @@
+{% extends "registration/base.html" %}
+
+{% load staticfiles %}
+
+{% block css_include %}
+    <link href="{% static 'registration/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class="content">
+    Thank you for registering.
+    <a href="/login/">Login</a>
+  </div>
+{% endblock %}
